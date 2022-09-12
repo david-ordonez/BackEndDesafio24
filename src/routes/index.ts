@@ -1,15 +1,11 @@
-import { Router } from "../../deps";
+import { Router } from "../../deps.ts";
 import {
-    getproductos,
-    getproducto,
-    addproducto,
-    updateproducto,
-    deleteproducto
-} from "../controllers/productos";
+    getcolores,
+    getcolor,
+    addcolor
+} from "../controllers/colores.ts";
 
 export const router = new Router()
-    .get("/api/productos", getproductos)
-    .get("/api/productos/:id", getproducto)
-    .post("/api/productos", addproducto)
-    .put("/api/productos/:id", updateproducto)
-    .delete("/api/productos/:id", deleteproducto)
+    .get("/api/colores", getcolores)
+    .get("/api/colores/:id", getcolor)
+    .post("/api/colores", addcolor)
